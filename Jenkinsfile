@@ -39,7 +39,7 @@ pipeline {
 
         stage("Run tests in SearchProductWithImplicitWait") {
             steps {
-                bat 'dotnet test SearchProductWithImplicitWait2\\SearchProductWithImplicitWait.csproj --logger "trx;LogFileName=TestResults.trx"'
+                bat 'dotnet test SearchProductWithImplicitWait\\SearchProductWithImplicitWait.csproj --logger "trx;LogFileName=TestResults.trx"'
             }
         }
 
